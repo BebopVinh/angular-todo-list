@@ -1,0 +1,9 @@
+<p>input-button-unit works!</p>
+This component's title is: {{ title }}
+<br />
+<input
+  type="text"
+  placeholder="change title..."
+  (keyup.enter)="changeTitle($event.target.value)"
+/>
+<button (click)="changeTitle('Button click!')">Save</button>
